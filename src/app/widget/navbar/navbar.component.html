@@ -1,0 +1,19 @@
+<nav class="navbar bg-light">
+    <div class="container">
+        <div class="w-100 d-flex justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top">
+            </a>
+
+            <div class="d-flex">
+                <input placeholder="Draft" [(ngModel)]="taskTitle" class="me-2 rounded-pill form-control-sm" />
+
+                <button class="m-0 ps-3 pe-3  btn btn-sm btn-primary rounded-pill" (click)="onTaskTitleEvent($event)">
+                    <i class="bi bi-plus-lg"></i>
+                    <span class="ms-1">NEW</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

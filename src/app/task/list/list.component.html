@@ -1,0 +1,11 @@
+<main class="container my-5">
+    <div *ngIf="count === 0; else taskList" class="alert alert-warning text-center display-5" role="alert">
+        Sorry no tasks found!
+    </div>
+
+    <ng-template #taskList>
+        <ul class="list-group">
+            <app-entry *ngFor="let task of tasks" [entry]="task"></app-entry>
+        </ul>
+    </ng-template>
+</main>
